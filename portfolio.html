@@ -5,6 +5,7 @@
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="style/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="style/css/bootstrap-theme.min.css"/>
+	<link rel="stylesheet" href="style/css/magnific-popup.css"/>
 	</head>
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -58,14 +59,20 @@
 								<br/><br/>
 								<b>Artéfacts:</b>
 								<ul>
-									<li><a href="files/Rapport_PFE_E2014.pdf">Rapport décrivant le fonctionnement du projet.</a></li>
-									<li><a href="https://github.com/h017">Code source propre au projet.</a></li>
-									<li><a href="https://github.com/clubcapra">Code source du robot du club Capra.</a></li>
+									<li><a href="files/Rapport_PFE_E2014.pdf" target="_blank">Rapport décrivant le fonctionnement du projet.</a></li>
+									<li><a href="https://github.com/h017" target="_blank">Code source propre au projet.</a></li>
+									<li><a href="https://github.com/clubcapra" target="_blank">Code source du robot du club Capra.</a></li>
 								</ul>
 								
-								<div style="display: block; margin: 0 auto; text-align: center">
-									<small><b>Exemple de r&eacute;sultat de la reconstruction 3D</b></small><br/>
-									<iframe width="550" height="335" src="http://www.youtube.com/embed/LbGPcin2QWo" style="border:0;" allowfullscreen></iframe>
+								<div style="width: 100%; text-align: center">
+									<div style="display:inline-block; margin-right: 5%">
+										<small><b>Exemple de r&eacute;sultat de la reconstruction 3D</b></small><br/>
+										<a class="popup-video" href="https://www.youtube.com/watch?v=LbGPcin2QWo"><img src="images/reconstruction_s.png" alt="Video reconstruction 3D"/></a>
+									</div>
+									<div style="display:inline-block;">
+										<small><b>Exemple de navigation avec évitement d'obstacle</b></small><br/>
+										<a class="popup-video" href="https://www.youtube.com/watch?v=8uozFwVkeRU"><img src="images/evitement_s.png" alt="&Eacute;vitement d'un obstacle dynamique"/></a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -92,24 +99,14 @@
 								<br/><br/>
 								<b>Liens utiles:</b>
 								<ul>
-									<li><a href="http://www.asc-csa.gc.ca/fra/rovers/mesr.asp">Fiche descriptive du MESR</a></li>
-									<li><a href="http://asrl.utias.utoronto.ca/~tdb/bib/langley_isairas12.pdf">Description du fonctionnement du MESR.</a></li>
+									<li><a href="http://www.asc-csa.gc.ca/fra/rovers/mesr.asp" target="_blank">Fiche descriptive du MESR</a></li>
+									<li><a href="http://asrl.utias.utoronto.ca/~tdb/bib/langley_isairas12.pdf" target="_blank">Description du fonctionnement du MESR.</a></li>
 								</ul>
 								
-								<div class="video-container" style="display: block; margin: 0 auto; text-align: center">
+								<div style="width: 100%; text-align: center">
 									<small><b>Vid&eacute;o de pr&eacute;sentation du MESR</b></small><br/>
-									<div id="kaltura_player_1396272654" style="width: 580px; height: 356px; display: block; margin: 0 auto; text-align: center" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
-										<span itemprop="name" content="MESR - Prototype terrestre de rover martien"></span>
-										<span itemprop="description" content="Ce rover à six roues peut transporter un bras robotique équipé d&#x27;un microscope haute définition et d&#x27;un mini-carottier permettant de recueillir des échantillons afin d&#x27;analyser la composition des roches martiennes."></span>
-										<span itemprop="duration" content="56"></span>
-										<span itemprop="thumbnail" content="http://cdnbakmi.kaltura.com/p/791172/sp/79117200/thumbnail/entry_id/1_b5ebi781/version/100001/acv/271"></span>
-										<span itemprop="width" content="550"></span>
-										<span itemprop="height" content="335"></span>
-									</div>
-									<script src="http://cdnapi.kaltura.com/p/791172/sp/79117200/embedIframeJs/uiconf_id/12555641/partner_id/791172?autoembed=true&entry_id=1_b5ebi781&playerId=kaltura_player_1396272654&cache_st=1396272654&width=580&height=356"></script>
+									<a class="popup-video" href="video_asc.html"><img src="images/mesr_s.png" alt="Video MESR"/></a>
 								</div>
-
-								<br/>
 							</div>
 						</div>
 						<!-- Moniteur broadcast -->
@@ -118,7 +115,21 @@
 								<h2 class="panel-title">Moniteur de broadcast r&eacute;seau<span style="float: right">2014</span></h2>
 							</div>
 							<div class="panel-body">
+								Dans l'objectif d'analyser les différents types de broadcasts réseau circulant sur le réseau du <a href="experience.html#BdeB">Collège de Bois-de-Boulogne</a>, une application python permettant d'enregistrer dans une base de données tous les paquets se rendant à une interface réseau connectée à plusieurs VLANs a été développée.<br/>
+								Cette application permet d'obtenir plusieurs informations sur les différents paquets, tels que leur contenu et leurs émetteurs/receveurs. <br/>
+								Une interface web peut aussi être utilisée pour consulter d'obtenir diverses statistiques, tels que les protocols publiant le plus et pouvant ainsi nuire à la qualité du réseau.
+							
+								<br/><br/>
+								<b>Artéfact:</b>
+								<ul>
+									<li><a href="https://github.com/mlefebvre/BroadcastMonitor" target="_blank">Code source de l'application (elle est <i>open source</i>).</a></li>
+								</ul>
 								
+								<div class="popup-gallery" style="display: block; margin: 0 auto; text-align: center">
+									<small><b>Captures d'&eacute;cran de l'application</b></small><br/>
+									<a href="images/monitor1.png" title="Liste des paquets"><img src="images/monitor1_s.png" alt="Miniature Broadcast Monitor 1" style="margin-right: 5%"></a>
+									<a href="images/monitor2.png" title="D&eacute;tails d'un paquet"><img src="images/monitor2_s.png" alt="Miniature Broadcast Monitor 2"></a>
+								</div>
 							</div>
 						</div>
 						<!-- CFCM -->
@@ -153,5 +164,37 @@
 
 		<script src="style/js/jquery-1.11.1.min.js"></script>
 		<script src="style/js/bootstrap.min.js"></script>
+		<script src="style/js/jquery.magnific-popup.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.popup-gallery').magnificPopup({
+					delegate: 'a',
+					type: 'image',
+					tLoading: 'Loading image #%curr%...',
+					mainClass: 'mfp-img-mobile',
+					gallery: {
+						enabled: true,
+						navigateByImgClick: true,
+						preload: [0,1]
+					},
+					image: {
+						tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+						titleSrc: function(item) {
+							return item.el.attr('title');
+						}
+					}
+				});
+				$('.popup-youtube, .popup-video').magnificPopup({
+					disableOn: 700,
+					type: 'iframe',
+					mainClass: 'mfp-fade',
+					removalDelay: 160,
+					preloader: false,
+
+					fixedContentPos: false
+				});
+			});
+		</script>
 	</body>
 </html>
